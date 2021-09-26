@@ -12,6 +12,7 @@ jobs:
        run: | 
           node -v
           npm -v
+         
 
   run-second-job:        
     runs-on: ubuntu-latest
@@ -21,4 +22,5 @@ jobs:
        run: |
           import platform
           print(platform.processor())
+           print("test")
        shell: python
